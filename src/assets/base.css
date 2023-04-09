@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --elements: hsl(209, 23%, 22%); /* dark elements */
+  --body-bg: hsl(207, 26%, 17%); /* body bg */
+  --text: hsl(0, 0%, 100%);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+html::webkit-scrollbar {
+  display: none;
+}
+
+/* Light Mode */
+.light-mode {
+  --text: hsl(200, 15%, 8%); /* Light mode text */
+  --dark-grey: hsl(0, 0%, 52%); /* Light mode input */
+  --body-bg: hsl(0, 0%, 98%); /* Body bg */
+  --elements: hsl(0, 0%, 100%); /* Light elements*/
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", Sans-Serif;
+}
+
+a {
+  display: block;
+  color: var(--text);
+  background: var(--elements);
+  text-decoration: none;
+}
+
+.fw-light {
+  font-weight: 200;
+  opacity: 0.85;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--text);
+}
+
+#app {
+  font-family: "Nunito Sans", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+}
+
+header {
+  min-height: 70px;
+  background: var(--elements);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header button {
+  background: transparent;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: var(--elements);
+  color: var(--text);
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--text);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 960px;
+  overflow: hidden;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+@keyframes reflect {
+  0% {
+    background: rgba(150, 150, 150, 0.3);
+  }
+  50% {
+    background: rgba(230, 230, 230, 0.3)
+  }
+  100% {
+    background: rgba(190, 190, 190, 0.3)
+  }
+}
